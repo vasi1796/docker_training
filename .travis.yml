@@ -4,4 +4,4 @@ services:
 before_install:
     - docker build -t vasi1796/docker_training -f Dockerfile.dev .
 script:
-    - docker run vasi1796/docker_training npm run test -- --coverage
+    - docker run vasi1796/docker_training CI=true npm run test -- --coverage
